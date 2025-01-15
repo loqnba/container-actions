@@ -14,4 +14,10 @@ jobs:
 
     steps:
       name: Example
-      run: echo 'mon exemple'
+      run: 
+        echo 'mon exemple'
+        echo "Env name: $([github.event.inputs.Environement])"
+        name: Github variable
+           run: echo'$({toJSON(github)})
+         name: Runner Varible
+           run: echo'$({toJSON(github)})
