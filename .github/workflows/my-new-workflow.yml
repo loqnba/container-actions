@@ -20,4 +20,4 @@ jobs:
         name: Github variable
            run: echo'$({toJSON(github)})
          name: Runner Varible
-           run: echo'$({toJSON(github)})
+           run: echo '${{ toJSON(secrets}}'
