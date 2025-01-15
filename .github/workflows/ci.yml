@@ -47,7 +47,7 @@ jobs:
       - name: Run the Container
         id: run
         env:
-          INPUT_WHO_TO_GREET: loqman
+          INPUT_WHO_TO_GREET: loqman nbahedda
       
         run: |
           docker run \

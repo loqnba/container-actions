@@ -1,0 +1,17 @@
+name: Test Manual worflow
+
+on:
+  workflow_dispatch:
+    imputs:
+      Environnement:
+        description: 'the envirronement i need to deploy on'
+        required: true
+        default: '/dev'
+
+jobs:
+  manual-job:
+    runs-on: ubuntu-latest
+
+    steps:
+      name: Example
+      run: echo 'mon exemple'
